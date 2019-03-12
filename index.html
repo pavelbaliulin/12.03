@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <style>
+        [r],
+        [y],
+        [g] {
+            background: gray;
+            width: 10vh;
+            height: 10vh;
+            border-radius: 50%;
+            margin: 10px auto;
+        }
+
+        [r].active {
+            background: greenyellow;
+        }
+
+        [y].active {
+            background: yellow;
+        }
+
+        [g].active {
+            background: red;
+        }
+    </style>
+    <button id="btn">Жмакни тут</button>
+    <section>
+        <div>111</div>
+    </section>
+    <section>
+        <div r></div>
+        <div y></div>
+        <div g></div>
+    </section>
+</body>
+<script>
+    // console.log($('#btn').html());
+    $('#btn').on('click', ({ target }))
+
+</script>
+<script>
+    // function timer(_time = 1000) {
+    //     return new Promise((res, rej) => {
+    //         setTimeout(res, _time);
+
+
+    //     });
+    // }
+    // function helpersChangeColor(selector) {
+    //     const oldActive = document.querySelector('.active');
+    //     oldActive && oldActive.classList.remove('.active');
+    //     if (selector) {
+    //         const active = document.querySelector(selector);
+    //         active && active.classList.remove('.active');
+    //     }
+
+
+    // }
+    // btn.addEventListener('click', async () => {
+    //     await timer(2000);
+    //     helpersChangeColor('[r]');
+
+    //     await timer(3000);
+    //     helpersChangeColor('[y]');
+    //     await timer(2000);
+    //     helpersChangeColor('[r]');
+    //     await timer(6000);
+    //     helpersChangeColor();
+
+    // });
+
+
+    // function timer(timer = 1000, cb) {
+    //     setTimeout(cb, timer);
+    // };
+    // btn.addEventListener('click', function () {
+    //     helpersChangeColor('[g]');
+    //     timer(3000, () => {
+    //         helpersChangeColor('[y]');
+    //         timer(2000, () => {
+    //             helpersChangeColor('[r]');
+    //             timer(6000, () => {
+    //                 helpersChangeColor();
+    //             });
+    //         });
+    //     })
+    // });
+    // btn.addEventListener('click', () => {
+    //     helpersChangeColor('[g]');
+    //     timer(3000)
+    //         .then(() => {
+    //             helpersChangeColor('[y]');
+    //             return timer(2000);
+    //         })
+    //         .then(() => {
+    //             helpersChangeColor('[r]');
+    //             return timer(6000);
+    //         })
+    //         .then(() => {
+    //             helpersChangeColor();
+    //         })
+    // });
+    //
+    // btn.addEventListener('click', (e) => {
+    //     let _promise = timer(3000).then(() => {
+    //         console.log('ok', _promise);
+    //     }, () => {
+    //         console.log('error', _promise);
+    //     });
+    //     console.log(_promise);
+    // // });
+
+    // btn.addEventListener('click', async function () {
+    //     try {
+    //         var a;
+    //         console.log(a.list);
+    //     } catch (error) {
+    //         console.log(error);
+    //     } finally {
+    //         console.log("Критический код")
+    //     }
+
+    // });
+</script>
+
+</html>
